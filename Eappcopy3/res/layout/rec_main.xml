@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+  <ImageView
+      android:id="@+id/imageView1"
+      android:layout_width="match_parent"
+      android:layout_height="275dp"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentLeft="true"
+      android:src="@drawable/ic_launcher"
+      android:layout_marginBottom="5dp"
+      android:visibility="gone"
+       />
+
+  <Button
+      android:id="@+id/recC"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:layout_toRightOf="@+id/recV2"
+      android:text="Image" />
+
+  <Button
+      android:id="@+id/recV2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@+id/recC"
+      android:layout_marginLeft="47dp"
+      android:text="send" />
+
+  <Button
+      android:id="@+id/button1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBaseline="@+id/recV2"
+      android:layout_alignBottom="@+id/recV2"
+      android:layout_toRightOf="@+id/recC"
+      android:text="save" />
+
+</RelativeLayout>

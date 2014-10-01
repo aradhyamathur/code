@@ -1,0 +1,8 @@
+package com.example.tabs;
+
+import android.support.v4.app.Fragment;
+
+public class frag1 extends Fragment {
+
+	
+}

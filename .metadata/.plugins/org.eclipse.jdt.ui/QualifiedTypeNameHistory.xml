@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="android.R"/>
+<fullyQualifiedTypeName name="android.support.v7.appcompat.R"/>
+<fullyQualifiedTypeName name="android.widget.TextView"/>
+<fullyQualifiedTypeName name="com.example.eapp.R.id"/>
+<fullyQualifiedTypeName name="com.example.tabs.R.layout"/>
+<fullyQualifiedTypeName name="com.example.tabs.MainActivity"/>
+<fullyQualifiedTypeName name="com.example.tabs.R.id"/>
+<fullyQualifiedTypeName name="android.support.v4.app.FragmentManager"/>
+<fullyQualifiedTypeName name="android.support.v4.app.FragmentStatePagerAdapter"/>
+<fullyQualifiedTypeName name="com.example.tabs.MainActivity.fragadap"/>
+<fullyQualifiedTypeName name="android.support.v4.view.ViewPager.OnPageChangeListener"/>
+<fullyQualifiedTypeName name="android.app.ActionBar.TabListener"/>
+<fullyQualifiedTypeName name="android.app.ActionBar"/>
+<fullyQualifiedTypeName name="android.app.ActionBar.Tab"/>
+<fullyQualifiedTypeName name="android.support.v4.view.ViewPager"/>
+<fullyQualifiedTypeName name="com.example.tab2.R.id"/>
+<fullyQualifiedTypeName name="android.support.v4.app.FragmentPagerAdapter"/>
+<fullyQualifiedTypeName name="android.support.v4.app.Fragment"/>
+<fullyQualifiedTypeName name="com.example.tab2.R.layout"/>
+<fullyQualifiedTypeName name="com.example.tab2.frag1"/>
+<fullyQualifiedTypeName name="com.example.tab2.frag2"/>
+<fullyQualifiedTypeName name="android.support.v4.app.FragmentActivity"/>
+<fullyQualifiedTypeName name="com.example.tab2.MainActivity.myfragadap"/>
+</qualifiedTypeNameHistroy>

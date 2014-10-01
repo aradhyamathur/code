@@ -1,0 +1,31 @@
+package com.example.tabs;
+
+import android.app.ActionBar;
+import android.app.Activity;
+import android.app.ActionBar.Tab;
+import android.app.ActionBar.TabListener;
+import android.graphics.drawable.Drawable;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+
+public class MainActivity extends Activity {
+	ActionBar actionbar;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		actionbar=getActionBar();
+		
+		ActionBar.Tab tab1=actionbar.newTab();
+		ActionBar.Tab tab2=actionbar.newTab();
+		
+		tab1.setText("frag1");
+		tab2.setText("frag2");
+		
+	
+	
+	}
+}

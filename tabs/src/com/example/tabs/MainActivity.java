@@ -1,0 +1,130 @@
+package com.example.tabs;
+
+import android.app.ActionBar;
+import android.app.Activity;
+import android.app.FragmentTransaction;
+import android.app.ActionBar.Tab;
+import android.app.ActionBar.TabListener;
+import android.graphics.drawable.Drawable;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentStatePagerAdapter;
+
+import android.support.v4.view.ViewPager;
+import android.support.v4.view.ViewPager.OnPageChangeListener;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+
+public class MainActivity extends FragmentActivity implements TabListener{
+	ActionBar actionbar;
+	//ViewPager pager;
+	//fragadap fragment;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		
+	//	fragment=new fragadap(getSupportFragmentManager());
+		
+		actionbar=getActionBar();
+		actionbar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+
+		
+	//	pager=(ViewPager) findViewById(R.id.pager);
+		//pager.setAdapter(fragment);
+		
+		ActionBar.Tab tab1=actionbar.newTab();
+		ActionBar.Tab tab2=actionbar.newTab();
+		
+		tab1.setText("frag1");
+		tab2.setText("frag2");
+		
+		actionbar.addTab(tab1);
+		actionbar.addTab(tab2);
+			
+		tab1.setTabListener(this);
+		tab2.setTabListener(this);
+		
+	/*	pager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+			
+			@Override
+			public void onPageSelected(int arg0) {
+				// TODO Auto-generated method stub
+			 actionbar.setSelectedNavigationItem(arg0);	
+				
+			}
+			
+			@Override
+			public void onPageScrolled(int arg0, float arg1, int arg2) {
+				// TODO Auto-generated method stub
+				
+			}
+			
+			@Override
+			public void onPageScrollStateChanged(int arg0) {
+				// TODO Auto-generated method stub
+				
+			}
+		});
+		
+	*/
+	
+	}
+	
+	/*
+	public class fragadap extends FragmentStatePagerAdapter{
+
+		public fragadap(FragmentManager fm) {
+			super(fm);
+			// TODO Auto-generated constructor stub
+		}
+
+		@Override
+		public Fragment getItem(int arg0) {
+		
+			Fragment frag=null;
+			
+			if(arg0==0){
+				frag=new frag1();
+			}
+			else if(arg0==1){
+				frag=new frag2();
+			}
+			
+			
+			return frag;
+		}
+
+		@Override
+		public int getCount() {
+			// TODO Auto-generated method stub
+			return 2;
+		}}
+		*/
+	
+
+
+	@Override
+	public void onTabReselected(Tab tab, FragmentTransaction ft) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	public void onTabSelected(Tab tab, FragmentTransaction ft) {
+		// TODO Auto-generated method stub
+		//pager.setCurrentItem(tab.getPosition());
+	}
+
+
+	@Override
+	public void onTabUnselected(Tab tab, FragmentTransaction ft) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}
